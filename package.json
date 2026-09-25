@@ -1,9 +1,11 @@
 {
   "name": "pojeto_integrador_vi",
   "version": "1.0.0",
-  "description": "rodar o servidor: node index.js",
-  "main": "index.js",
+  "description": "API de produtos em TypeScript",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +21,11 @@
   },
   "homepage": "https://github.com/Edvan15/pojeto_integrador_VI#readme",
   "dependencies": {
-    "express": "^5.2.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
     "typescript": "^7.0.2"
   }
 }
